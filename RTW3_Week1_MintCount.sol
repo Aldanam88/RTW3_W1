@@ -12,8 +12,6 @@ contract Alchemy is ERC721, ERC721Enumerable, ERC721URIStorage {
     Counters.Counter private _tokenIdCounter;
     uint256 MAX_SUPPLY = 10000;
 
-    //uint8 public totalMinted; 
-
     mapping(address =>uint) public mintCount;   
 
     constructor() ERC721("Alchemy", "ALCH") {}
